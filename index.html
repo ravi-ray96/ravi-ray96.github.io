@@ -18,7 +18,7 @@
             <div class="logo">
                 <h2>Ravi Ray</h2>
             </div>
-            <div class="hamburger" id="hamburger">
+            <div class="hamburger" id="hamburger" aria-label="Toggle menu">
                 <i class="fas fa-bars"></i>
             </div>
             <ul class="menu" id="menu">
@@ -26,27 +26,29 @@
                 <li><a href="#about">About</a></li>
                 <li><a href="#projects">Projects</a></li>
                 <li><a href="#experience">Experience</a></li>
+                <li><a href="#certifications">Certifications</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
     </header>
 
-    <section id="home" class="hero">
+    <section id="home" class="hero section">
         <div class="hero-content">
             <h3>Computer Science Professional</h3>
             <h1>Ravi Ray</h1>
-            <h2> Software Developer | AI Enthusiast</h2>
+            <h2>Software Developer | AI Enthusiast</h2>
             <p class="hero-bio">Passionate about building innovative solutions and contributing to impactful projects. Currently pursuing my Bachelor's in Computer Science at UTA, expected Summer 2025.</p>
 
             <div class="social-links">
                 <a href="https://github.com/ravi-ray96" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
                 <a href="https://linkedin.com/in/ravi-ray" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
-                <a href="mailto:rkr9684@mavs.uta.edu" aria-label="Email"><i class="fas fa-envelope"></i></a>
+                <a href="mailto:ravi.ray@example.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
             </div>
             <a href="#projects" class="cta-button">Explore My Work</a>
         </div>
         <div class="hero-image">
-            <img src="assets/images/profile.jpg" alt="Ravi Ray Profile">  </div>
+            <img src="assets/images/profile.jpg" alt="Ravi Ray Profile Picture">
+        </div>
     </section>
 
     <section id="about" class="section">
@@ -58,6 +60,7 @@
             <p>
                 I'm currently expanding my expertise in areas like cybersecurity and cloud computing, demonstrated by my Google Cybersecurity Professional Certificate and AWS certifications. I'm eager to contribute my skills and enthusiasm to innovative projects and collaborative teams.
             </p>
+            <a href="assets/documents/_Resume_Ray_.pdf" class="cta-button" download>Download Resume</a>
 
             <div class="skills-section">
                 <h3>Technical Skills</h3>
@@ -85,57 +88,55 @@
     <section id="projects" class="section">
         <h2 class="section-title">Projects</h2>
         <div class="projects-grid">
-
             <div class="project-card">
-                <img src="assets/images/turn-of-destiny.jpg" alt="Turn of Destiny Game">
+                <img src="assets/images/turn-of-destiny.jpg" alt="Turn of Destiny Game Screenshot">
                 <div class="project-info">
                     <h3>Turn of Destiny</h3>
-                    <p>Java & WebSockets | Real-time multiplayer architecture</p>
+                    <p>A real-time multiplayer game built with Java and WebSockets, featuring dynamic player interactions and scalable architecture.</p>
                     <div class="project-links">
                         <a href="https://github.com/ravi-ray96/turn-of-destiny" target="_blank" aria-label="GitHub Code"><i class="fab fa-github"></i> Code</a>
-                        <!-- Add live demo if available -->
-                        </div>
+                    </div>
                 </div>
             </div>
 
             <div class="project-card">
-                <img src="assets/images/tictactoe.jpg" alt="TicTacToe Game">
+                <img src="assets/images/tictactoe.jpg" alt="TicTacToe Game Screenshot">
                 <div class="project-info">
                     <h3>TicTacToe</h3>
-                    <p>HTML, Java, WebSockets | Real-time multiplayer game</p>
-                    <div class="project-links">
-                        </div>
-                </div>
-            </div>
-
-            <div class="project-card">
-                <img src="assets/images/dating-app-ui.jpg" alt="Dating App UI">
-                <div class="project-info">
-                    <h3>Dating App UI</h3>
-                    <p>HTML5, CSS3, Bootstrap | Responsive Design</p>
+                    <p>A real-time multiplayer TicTacToe game using HTML, Java, and WebSockets for seamless player connectivity.</p>
                     <div class="project-links">
                     </div>
                 </div>
             </div>
 
-           <div class="project-card">
-                <img src="assets/images/usace-logo-color.jpg" alt="USACE Lake App">
+            <div class="project-card">
+                <img src="assets/images/dating-app-ui.jpg" alt="Dating App UI Screenshot">
+                <div class="project-info">
+                    <h3>Dating App UI</h3>
+                    <p>A responsive user interface for a dating app, designed with HTML5, CSS3, and Bootstrap for cross-device compatibility.</p>
+                    <div class="project-links">
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <img src="assets/images/usace-logo-color.jpg" alt="USACE Lake App Screenshot">
                 <div class="project-info">
                     <h3>USACE Water Level App</h3>
-                    <p>Flutter | Real-time lake monitoring with push notifications</p>
+                    <p>A Flutter-based mobile app for real-time lake water level monitoring with push notifications.</p>
                     <span class="badge">Completed</span>
                     <div class="project-links">
                     </div>
                 </div>
             </div>
 
-          <div class="project-card">
-                <img src="assets/images/income-expense.jpg" alt="Income Expense Calculator">
+            <div class="project-card">
+                <img src="assets/images/income-expense.jpg" alt="Income Expense Calculator Screenshot">
                 <div class="project-info">
                     <h3>Income Expense Calculator</h3>
-                    <p>Python | CSV Data Analysis</p>
+                    <p>A Python-based tool for financial tracking and analysis using CSV data processing.</p>
                     <div class="project-links">
-                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -144,74 +145,77 @@
     <section id="experience" class="section">
         <h2 class="section-title">Experience</h2>
         <div class="experience-timeline">
-          
-          <div class="timeline-item">
-            <div class="timeline-date">Apr 2019 – Present</div>
-            <div class="timeline-content">
-              <h3 class="job-title">Data Coordinator</h3>
-              <h4 class="company">Amazon Sort Center – Irving, TX</h4>
-              <ul>
-                <li>Managed production data for 500+ products daily with 98% accuracy.</li>
-                <li>Conducted audits that improved data integrity by 15%.</li>
-                <li>Collaborated with cross-functional teams to save 10+ hours weekly.</li>
-              </ul>
+            <div class="timeline-item">
+                <div class="timeline-date">Apr 2019 – Present</div>
+                <div class="timeline-content">
+                    <h3 class="job-title">Data Coordinator</h3>
+                    <h4 class="company">Amazon Sort Center – Irving, TX</h4>
+                    <ul>
+                        <li>Managed production data for 500+ products daily with 98% accuracy.</li>
+                        <li>Conducted audits that improved data integrity by 15%.</li>
+                        <li>Collaborated with cross-functional teams to save 10+ hours weekly.</li>
+                    </ul>
+                </div>
             </div>
-          </div>
-      
-          <div class="timeline-item">
-            <div class="timeline-date">Jun 2022 – Aug 2024</div>
-            <div class="timeline-content">
-              <h3 class="job-title">Software Update Technician</h3>
-              <h4 class="company">FedEx Supply Chain – Coppell, TX</h4>
-              <ul>
-                <li>Performed 1,000+ smartphone updates with a 99% success rate.</li>
-                <li>Resolved software issues, reducing resolution time by 20%.</li>
-                <li>Mentored 15+ technicians on troubleshooting best practices.</li>
-              </ul>
-            </div>
-          </div>
-      
-        </div>
-      </section>
-      
 
-      <section id="certifications" class="section">
+            <div class="timeline-item">
+                <div class="timeline-date">Jun 2022 – Aug 2024</div>
+                <div class="timeline-content">
+                    <h3 class="job-title">Software Update Technician</h3>
+                    <h4 class="company">FedEx Supply Chain – Coppell, TX</h4>
+                    <ul>
+                        <li>Performed 1,000+ smartphone updates with a 99% success rate.</li>
+                        <li>Resolved software issues, reducing resolution time by 20%.</li>
+                        <li>Mentored 15+ technicians on troubleshooting best practices.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="certifications" class="section">
         <h2 class="section-title">Certifications & Awards</h2>
         <div class="certifications-grid">
-              <div class="cert-card">
+            <div class="cert-card">
                 <img src="assets/images/GoogleCybersecurity.jpg" alt="Google Cybersecurity Certificate">
                 <h3>Google Cybersecurity Professional Certificate</h3>
                 <p>Coursera - Feb 2025</p>
             </div>
-             <div class="cert-card">
+            <div class="cert-card">
                 <img src="assets/images/AWSAdvancedNetworking.jpg" alt="AWS Networking Certificate">
                 <h3>AWS Certified Advanced Networking - Specialty</h3>
                 <p>LinkedIn Learning - Mar 2024</p>
             </div>
-             <div class="cert-card">
+            <div class="cert-card">
                 <img src="assets/images/PythonProgramming.jpg" alt="Python Certificate">
                 <h3>Python Programming Fundamentals</h3>
                 <p>LinkedIn Learning - Apr 2025</p>
             </div>
             <div class="cert-card">
-                <img src="assets/images/GitHubCopilot.jpg" alt="GithubCopilot Certificate">
+                <img src="assets/images/GitHubCopilot.jpg" alt="GitHub Copilot Certificate">
                 <h3>Practical GitHub Copilot</h3>
                 <p>LinkedIn Learning - Apr 2024</p>
             </div>
             <div class="cert-card">
-                <img src="assets/images/CloudEssential.jpg" alt="GithubCopilot Certificate">
+                <img src="assets/images/CloudEssential.jpg" alt="Cloud Essentials Certificate">
                 <h3>Cloud Essentials Knowledge Badge Assessment</h3>
-                <p> 1/17/2025</p>
-            </div>
-             <div class="cert-card">
-                <img src="assets/images/JobsRoleInCloud.jpg" alt="GithubCopilot Certificate">
-                <h3>Job Roles in the Cloud</h3>
-                <p> 1/6/2025</p>
+                <p>Jan 17, 2025</p>
             </div>
             <div class="cert-card">
-                <img src="assets/images/FedExEmployee.jpg" alt="Fedex Employee">
+                <img src="assets/images/JobsRoleInCloud.jpg" alt="Job Roles in the Cloud Certificate">
+                <h3>Job Roles in the Cloud</h3>
+                <p>Jan 6, 2025</p>
+            </div>
+            <div class="cert-card">
+                <img src="assets/images/FedExEmployee.jpg" alt="FedEx Employee of the Month Award">
                 <h3>Employee of the Month</h3>
-                <p> FedEx Supply Chain - Jan 2024</p>
+                <p>FedEx Supply Chain - Jan 2024</p>
+            </div>
+            <div class="cert-card">
+                <img src="assets/images/UTAReferenceLetter.jpg" alt="UTA Reference Letter">
+                <h3>USACE Reference Letter</h3>
+                <p>U.S. Army Corps of Engineers - 2025</p>
+                <a href="assets/documents/UTA Reference Letter - Ravi Ray.pdf" class="cta-button" download>Download PDF</a>
             </div>
         </div>
     </section>
@@ -223,15 +227,15 @@
                 <p><i class="fas fa-map-marker-alt"></i> Arlington, TX 76010</p>
                 <p><i class="fas fa-phone"></i> (817) 422-4938</p>
                 <p><i class="fas fa-envelope"></i> <a href="mailto:rkr9684@mavs.uta.edu">rkr9684@mavs.uta.edu</a></p>
-                 <div class="social-links">
-                     <a href="https://github.com/ravi-ray96" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                <div class="social-links">
+                    <a href="https://github.com/ravi-ray96" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
                     <a href="https://linkedin.com/in/ravi-ray" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
                 </div>
             </div>
             <form action="https://formspree.io/f/[YOUR_FORM_ID]" method="POST">
-                <input type="text" name="name" placeholder="Name" required>
-                <input type="email" name="email" placeholder="Email" required>
-                <textarea name="message" placeholder="Message" required></textarea>
+                <input type="text" name="name" placeholder="Name" required aria-label="Name">
+                <input type="email" name="email" placeholder="Email" required aria-label="Email">
+                <textarea name="message" placeholder="Message" required aria-label="Message"></textarea>
                 <button type="submit" class="cta-button">Send Message</button>
             </form>
         </div>

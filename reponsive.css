@@ -6,10 +6,15 @@
         left: 0;
         width: 100%;
         background: var(--primary-color);
+        opacity: 0;
+        transform: translateY(-10px);
+        transition: opacity 0.3s ease, transform 0.3s ease;
     }
 
     .menu.active {
         display: block;
+        opacity: 1;
+        transform: translateY(0);
     }
 
     .hamburger {

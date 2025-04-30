@@ -2,7 +2,7 @@
     --primary-color: #2c3e50;
     --secondary-color: #3498db;
     --accent-color: #e67e22;
-    --bg-color: #f0f5f9;
+    --bg-color: #f4f8fb;
     --text-color: #333;
 }
 
@@ -11,7 +11,7 @@ body {
     margin: 0;
     background-color: var(--bg-color);
     color: var(--text-color);
-    line-height: 1.6;
+    line-height: 1.8;
     font-size: 16px;
 }
 
@@ -19,6 +19,10 @@ body {
     background: var(--primary-color);
     color: white;
     padding: 1rem 5%;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 .navbar {
@@ -30,6 +34,7 @@ body {
 .logo h2 {
     margin: 0;
     font-weight: 600;
+    font-size: 1.8rem;
 }
 
 .menu {
@@ -39,13 +44,14 @@ body {
 }
 
 .menu li {
-    margin-left: 2rem;
+    margin-left: 2.5rem;
 }
 
 .menu a {
     color: white;
     text-decoration: none;
-    transition: color 0.3s;
+    font-weight: 500;
+    transition: color 0.3s ease;
 }
 
 .menu a:hover {
@@ -62,7 +68,7 @@ body {
 .hero {
     background: var(--bg-color);
     color: var(--text-color);
-    padding: 4rem 5%;
+    padding: 5rem 5%;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -70,24 +76,30 @@ body {
 
 .hero-content {
     flex: 1;
-    padding-right: 2rem;
+    padding-right: 3rem;
 }
 
 .hero-content h1 {
-    font-size: 3rem;
+    font-size: 3.5rem;
     margin-bottom: 0.5rem;
     color: var(--primary-color);
 }
 
 .hero-content h2 {
-    font-size: 1.5rem;
+    font-size: 1.8rem;
     color: var(--secondary-color);
     margin-bottom: 1rem;
 }
 
+.hero-content h3 {
+    font-size: 1.4rem;
+    color: var(--text-color);
+    margin-bottom: 1rem;
+}
+
 .hero-content p {
-    font-size: 1.1rem;
-    line-height: 1.8;
+    font-size: 1.2rem;
+    line-height: 1.9;
     margin-bottom: 2rem;
 }
 
@@ -97,9 +109,9 @@ body {
 
 .social-links a {
     color: var(--primary-color);
-    font-size: 1.5rem;
-    margin-right: 1rem;
-    transition: color 0.3s;
+    font-size: 1.8rem;
+    margin-right: 1.5rem;
+    transition: color 0.3s ease;
 }
 
 .social-links a:hover {
@@ -114,7 +126,7 @@ body {
     text-decoration: none;
     font-weight: 500;
     display: inline-block;
-    transition: background-color 0.3s;
+    transition: background-color 0.3s ease;
 }
 
 .cta-button:hover {
@@ -134,11 +146,19 @@ body {
 }
 
 .section {
-    padding: 4rem 5%;
+    padding: 5rem 5%;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.section.visible {
+    opacity: 1;
+    transform: translateY(0);
 }
 
 .section-title {
-    font-size: 2.5rem;
+    font-size: 2.8rem;
     color: var(--primary-color);
     text-align: center;
     margin-bottom: 3rem;
@@ -169,7 +189,7 @@ body {
     border-radius: 10px;
     overflow: hidden;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s;
+    transition: transform 0.3s ease;
 }
 
 .project-card:hover {
@@ -194,7 +214,7 @@ body {
 
 .project-info p {
     font-size: 1rem;
-    line-height: 1.5;
+    line-height: 1.6;
 }
 
 .project-links {
@@ -206,7 +226,7 @@ body {
     text-decoration: none;
     margin-right: 1rem;
     font-weight: 500;
-    transition: color 0.3s;
+    transition: color 0.3s ease;
 }
 
 .project-links a:hover {
@@ -275,8 +295,8 @@ body {
 }
 
 .skill {
-    background-color: var(--light);
-    color: var(--text-color);
+    background-color: var(--secondary-color);
+    color: white;
     padding: 0.5rem 1rem;
     border-radius: 20px;
     font-size: 0.9rem;
@@ -307,6 +327,7 @@ body {
     margin-right: 0.5rem;
     color: var(--secondary-color);
 }
+
 
 .contact-grid form {
     display: flex;
