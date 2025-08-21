@@ -3,23 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ravi Ray | Computer Science Portfolio</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Ravi Ray | Software Developer Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="responsive.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="reponsive.css"> <!-- Note: Typo in filename, should be responsive.css -->
 </head>
 <body>
 
+    <!-- Header -->
     <header class="header">
         <nav class="navbar">
             <div class="logo">
                 <h2>Ravi Ray</h2>
-            </div>
-            <div class="hamburger" id="hamburger" aria-label="Toggle menu">
-                <i class="fas fa-bars"></i>
             </div>
             <ul class="menu" id="menu">
                 <li><a href="#home">Home</a></li>
@@ -29,188 +25,227 @@
                 <li><a href="#certifications">Certifications</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
+            <div class="hamburger" id="hamburger">
+                <i class="fas fa-bars"></i>
+            </div>
         </nav>
     </header>
 
+    <!-- Hero Section -->
     <section id="home" class="hero section">
         <div class="hero-content">
-            <h3>Computer Science Professional</h3>
             <h1>Ravi Ray</h1>
             <h2>Software Developer | AI Enthusiast</h2>
-            <p class="hero-bio">Passionate about building innovative solutions and contributing to impactful projects. Currently pursuing my Bachelor's in Computer Science at UTA, expected Summer 2025.</p>
+            <h3>Recent Computer Science Graduate</h3>
+            <p>Recent Computer Science graduate with a 3.06 GPA and hands-on experience in full-stack development, mobile applications, and data analysis. Proficient in Java, Python, C++, and cloud technologies, with a proven track record of developing scalable software solutions and optimizing workflows. Eager to leverage technical skills and problem-solving abilities in an entry-level software developer role at innovative companies.</p>
             <div class="social-links">
-                <a href="https://github.com/ravi-ray96" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
-                <a href="https://linkedin.com/in/ravi-ray" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
-                <a href="mailto:ravi.ray@example.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+                <a href="https://linkedin.com/in/ravi-ray-776aa82b8"><i class="fab fa-linkedin"></i></a>
+                <a href="https://github.com/ravi-ray96"><i class="fab fa-github"></i></a>
             </div>
             <a href="#projects" class="cta-button">Explore My Work</a>
         </div>
         <div class="hero-image">
-            <img src="assets/images/profile.jpg" alt="Ravi Ray Profile Picture">
+            <!-- Placeholder for profile image; add actual src if available -->
+            <img src="assets/profile.jpg" alt="Ravi Ray">
         </div>
     </section>
 
+    <!-- About Section -->
     <section id="about" class="section">
         <h2 class="section-title">About Me</h2>
         <div class="about-content">
-            <p>
-                Driven and results-oriented Computer Science student at the University of Texas at Arlington. My academic journey, coupled with hands-on experience in data coordination and software updates, has honed my technical acumen and problem-solving skills. I'm passionate about leveraging technology to create impactful solutions, with a strong interest in software development and artificial intelligence.
-            </p>
-            <p>
-                I'm currently expanding my expertise in areas like cybersecurity and cloud computing, demonstrated by my Google Cybersecurity Professional Certificate and AWS certifications. I'm eager to contribute my skills and enthusiasm to innovative projects and collaborative teams.
-            </p>
-            <a href="documents/_Ravi_Ray_.pdf" class="cta-button" download>Download Resume</a>
-
-            <div class="skills-section">
-                <h3>Technical Skills</h3>
-                <ul class="skills-list">
-                    <li><span class="skill">C</span></li>
-                    <li><span class="skill">C++</span></li>
-                    <li><span class="skill">Java</span></li>
-                    <li><span class="skill">Python</span></li>
-                    <li><span class="skill">JavaScript</span></li>
-                    <li><span class="skill">HTML5</span></li>
-                    <li><span class="skill">CSS3</span></li>
-                    <li><span class="skill">Django</span></li>
-                    <li><span class="skill">Flutter</span></li>
-                    <li><span class="skill">SQLite</span></li>
-                    <li><span class="skill">GitHub Copilot</span></li>
-                    <li><span class="skill">VSCode</span></li>
-                    <li><span class="skill">Linux</span></li>
-                    <li><span class="skill">iOS</span></li>
-                    <li><span class="skill">Windows</span></li>
-                </ul>
-            </div>
+            <p>Driven and results-oriented Computer Science graduate from the University of Texas at Arlington (GPA: 3.06). My academic journey, combined with practical experience in data management, software development, and cloud technologies, has sharpened my technical expertise and problem-solving capabilities. Passionate about leveraging technology to drive impactful solutions, with a focus on software engineering, artificial intelligence, and cybersecurity.</p>
+            <p>I have expanded my skill set through certifications in cybersecurity, AWS networking, and cloud essentials, and I'm excited to apply my knowledge in collaborative, innovative environments.</p>
+            <a href="_Ravi_Ray_.pdf" class="cta-button" download>Download Resume</a>
+        </div>
+        <div class="skills-section">
+            <h3>Technical Skills</h3>
+            <ul class="skills-list">
+                <li class="skill">C</li>
+                <li class="skill">C++</li>
+                <li class="skill">Java</li>
+                <li class="skill">Python</li>
+                <li class="skill">JavaScript</li>
+                <li class="skill">Dart</li>
+                <li class="skill">SQL</li>
+                <li class="skill">HTML5</li>
+                <li class="skill">CSS3</li>
+                <li class="skill">Django</li>
+                <li class="skill">Flutter</li>
+                <li class="skill">Bootstrap</li>
+                <li class="skill">WebSockets</li>
+                <li class="skill">Matplotlib</li>
+                <li class="skill">React.js</li>
+                <li class="skill">Git</li>
+                <li class="skill">GitHub Copilot</li>
+                <li class="skill">VSCode</li>
+                <li class="skill">SQLite</li>
+                <li class="skill">Maven</li>
+                <li class="skill">Docker</li>
+                <li class="skill">Jenkins</li>
+                <li class="skill">RESTful APIs</li>
+                <li class="skill">AWS (EC2, S3)</li>
+                <li class="skill">MongoDB</li>
+                <li class="skill">PostgreSQL</li>
+                <li class="skill">Agile/Scrum</li>
+                <li class="skill">Test-Driven Development (TDD)</li>
+                <li class="skill">CI/CD</li>
+                <li class="skill">Windows</li>
+                <li class="skill">Linux</li>
+                <li class="skill">iOS</li>
+                <li class="skill">Android</li>
+            </ul>
         </div>
     </section>
 
+    <!-- Projects Section -->
     <section id="projects" class="section">
         <h2 class="section-title">Projects</h2>
         <div class="projects-grid">
             <div class="project-card">
-                <img src="assets/images/turn-of-destiny.jpg" alt="Turn of Destiny Game Screenshot">
+                <!-- Placeholder for image; add actual src if available -->
+                <img src="assets/turn-of-destiny.jpg" alt="Turn of Destiny">
                 <div class="project-info">
-                    <h3>Turn of Destiny</h3>
-                    <p>A real-time multiplayer game built with Java and WebSockets, featuring dynamic player interactions and scalable architecture.</p>
+                    <h3>Turn of Destiny Multiplayer Game</h3>
+                    <p>Engineered a real-time multiplayer game using Java and WebSockets, supporting up to four players with low-latency server-client communication. Optimized game logic and networking code, reducing latency by 40% and enhancing player experience.</p>
                     <div class="project-links">
-                        <a href="https://github.com/ravi-ray96/turn-of-destiny" target="_blank" aria-label="GitHub Code"><i class="fab fa-github"></i> Code</a>
+                        <a href="https://ravi-ray96.github.io/The_Turn_Of_Destiny-main/">Demo</a>
+                        <a href="https://github.com/ravi-ray96/The_Turn_Of_Destiny-main">Code</a>
                     </div>
                 </div>
             </div>
-
             <div class="project-card">
-                <img src="assets/images/tictactoe.jpg" alt="TicTacToe Game Screenshot">
+                <img src="assets/tictactoe.jpg" alt="TicTacToe">
                 <div class="project-info">
-                    <h3>TicTacToe</h3>
-                    <p>A real-time multiplayer TicTacToe game using HTML, Java, and WebSockets for seamless player connectivity.</p>
+                    <h3>Multiplayer TicTacToe Game</h3>
+                    <p>Developed a real-time multiplayer game server using HTML, Java, and WebSockets, handling multiple sessions with HTTP and WebSocket protocols. Incorporated robust error handling, achieving 100% uptime in testing with concurrent users.</p>
+                    <div class="project-links">
+                        <a href="https://github.com/ravi-ray96/TicTacToe_game">Code</a>
+                    </div>
                 </div>
             </div>
-
             <div class="project-card">
-                <img src="assets/images/dating-app-ui.jpg" alt="Dating App UI Screenshot">
+                <img src="assets/dating-app-ui.jpg" alt="Dating App UI">
                 <div class="project-info">
-                    <h3>Dating App UI</h3>
-                    <p>A responsive user interface for a dating app, designed with HTML5, CSS3, and Bootstrap for cross-device compatibility.</p>
+                    <h3>Dating App Responsive UI</h3>
+                    <p>Designed a mobile-responsive user interface using HTML5, CSS3, and Bootstrap, adhering to modern UX principles. Enhanced accessibility, leading to a 30% improvement in user engagement metrics during evaluations.</p>
+                    <div class="project-links">
+                        <a href="https://github.com/ravi-ray96/DatingApp_bootstrap">Code</a>
+                    </div>
                 </div>
             </div>
-
             <div class="project-card">
-                <img src="assets/images/usace-logo-color.jpg" alt="USACE Lake App Screenshot">
+                <img src="assets/usace-app.jpg" alt="USACE Water Level App">
                 <div class="project-info">
-                    <h3>USACE Water Level App</h3>
-                    <p>A Flutter-based mobile app for real-time lake water level monitoring with push notifications.</p>
+                    <h3>USACE Lake Water Level App</h3>
+                    <p>Built a cross-platform Flutter app for real-time monitoring of water levels in 38 lakes, integrating API feeds, geo-mapping, and Firebase push notifications. Improved emergency response by 25% in simulated tests.</p>
                     <span class="badge">Completed</span>
+                    <div class="project-links">
+                        <a href="https://github.com/ravi-ray96/USACE-Lake-App">Code</a> <!-- Placeholder; add actual repo if exists -->
+                    </div>
                 </div>
             </div>
-
             <div class="project-card">
-                <img src="assets/images/income-expense.jpg" alt="Income Expense Calculator Screenshot">
+                <img src="assets/income-expense.jpg" alt="Income Expense Calculator">
                 <div class="project-info">
-                    <h3>Income Expense Calculator</h3>
-                    <p>A Python-based tool for financial tracking and analysis using CSV data processing.</p>
+                    <h3>Income and Expense Analyzer</h3>
+                    <p>Created a web-based Python tool with Django and Matplotlib to process CSV data for financial analysis. Automated calculations and integrated validation, reducing errors by 25% and improving accuracy.</p>
+                    <div class="project-links">
+                        <a href="https://github.com/ravi-ray96/DjangoPro">Code</a>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
+    <!-- Experience Section -->
     <section id="experience" class="section">
         <h2 class="section-title">Experience</h2>
         <div class="experience-timeline">
             <div class="timeline-item">
-                <div class="timeline-date">Apr 2019 – Present</div>
+                <div class="timeline-date">Fall 2024 – Summer 2025</div>
                 <div class="timeline-content">
-                    <h3 class="job-title">Data Coordinator</h3>
-                    <h4 class="company">Amazon Sort Center – Irving, TX</h4>
+                    <h3>Software Development Intern, United States Army Corps of Engineers (USACE) – Tulsa, OK</h3>
                     <ul>
-                        <li>Managed production data for 500+ products daily with 98% accuracy.</li>
-                        <li>Conducted audits that improved data integrity by 15%.</li>
-                        <li>Collaborated with cross-functional teams to save 10+ hours weekly.</li>
+                        <li>Collaborated with USACE engineers to develop a cross-platform Flutter mobile application for real-time monitoring of water levels across 38 lakes, integrating API data feeds and geo-mapping.</li>
+                        <li>Implemented push notification systems using Firebase, resulting in improved emergency response times by 25% during simulated tests.</li>
+                        <li>Conducted code reviews and utilized Agile methodologies to ensure high-quality deliverables.</li>
+                        <li>Performed user acceptance testing, enhancing app usability and achieving 95% user satisfaction in pilot trials.</li>
                     </ul>
                 </div>
             </div>
-
+            <div class="timeline-item">
+                <div class="timeline-date">Apr 2019 – Present</div>
+                <div class="timeline-content">
+                    <h3>Data Coordinator, Amazon Sort Center – Irving, TX</h3>
+                    <ul>
+                        <li>Managed and analyzed production data for over 500 products daily using Python scripts and SQL queries, achieving 98% accuracy and reducing discrepancies by 20%.</li>
+                        <li>Developed automation tools in Python to streamline data audits, improving integrity by 15% and saving 10+ hours weekly.</li>
+                        <li>Collaborated with cross-functional teams to optimize workflows by integrating API endpoints for real-time tracking.</li>
+                        <li>Utilized AWS services (S3 and EC2) for secure data handling in compliance with standards.</li>
+                    </ul>
+                </div>
+            </div>
             <div class="timeline-item">
                 <div class="timeline-date">Jun 2022 – Aug 2024</div>
                 <div class="timeline-content">
-                    <h3 class="job-title">Software Update Technician</h3>
-                    <h4 class="company">FedEx Supply Chain – Coppell, TX</h4>
+                    <h3>Software Update Technician, FedEx Supply Chain – Coppell, TX</h3>
                     <ul>
-                        <li>Performed 1,000+ smartphone updates with a 99% success rate.</li>
-                        <li>Resolved software issues, reducing resolution time by 20%.</li>
-                        <li>Mentored 15+ technicians on troubleshooting best practices.</li>
+                        <li>Executed software updates on over 1,000 devices, achieving 99% success rate through testing and debugging in Java and Android environments.</li>
+                        <li>Diagnosed issues using custom scripts, reducing resolution time by 20% and minimizing downtime.</li>
+                        <li>Trained 15+ technicians on troubleshooting and Git version control, enhancing team efficiency.</li>
+                        <li>Implemented automated testing frameworks, reducing post-update errors by 30%.</li>
                     </ul>
                 </div>
             </div>
         </div>
     </section>
 
+    <!-- Certifications Section -->
     <section id="certifications" class="section">
         <h2 class="section-title">Certifications & Awards</h2>
         <div class="certifications-grid">
             <div class="cert-card">
-                <img src="assets/images/GoogleCybersecurity.jpg" alt="Google Cybersecurity Certificate">
                 <h3>Google Cybersecurity Professional Certificate</h3>
                 <p>Coursera - Feb 2025</p>
+                <a href="https://coursera.org/verify/professional-cert/Y6GE6KLDPVAA">View Certificate</a>
             </div>
             <div class="cert-card">
-                <img src="assets/images/AWSAdvancedNetworking.jpg" alt="AWS Networking Certificate">
-                <h3>AWS Certified Advanced Networking - Specialty</h3>
-                <p>LinkedIn Learning - Mar 2024</p>
-            </div>
-            <div class="cert-card">
-                <img src="assets/images/PythonProgramming.jpg" alt="Python Certificate">
                 <h3>Python Programming Fundamentals</h3>
                 <p>LinkedIn Learning - Apr 2025</p>
+                <a href="https://coursera.org/share/8eca7ba2e72b9dae7deece4a0c518b4a">View Certificate</a>
             </div>
             <div class="cert-card">
-                <img src="assets/images/GithubCopilot.jpg" alt="GitHub Copilot Certificate">
+                <h3>AWS Certified Advanced Networking – Specialty</h3>
+                <p>LinkedIn Learning - Mar 2024</p>
+                <a href="https://www.linkedin.com/learning">View Certificate</a>
+            </div>
+            <div class="cert-card">
                 <h3>Practical GitHub Copilot</h3>
                 <p>LinkedIn Learning - Apr 2024</p>
+                <a href="https://www.linkedin.com/learning">View Certificate</a>
             </div>
             <div class="cert-card">
-                <img src="assets/images/CloudEssential.jpg" alt="Cloud Essentials Certificate">
                 <h3>Cloud Essentials Knowledge Badge Assessment</h3>
                 <p>Jan 17, 2025</p>
             </div>
             <div class="cert-card">
-                <img src="assets/images/JobsRoleInCloud.jpg" alt="Job Roles in the Cloud Certificate">
                 <h3>Job Roles in the Cloud</h3>
                 <p>Jan 6, 2025</p>
             </div>
             <div class="cert-card">
-                <img src="assets/images/FedExEmployee.jpg" alt="FedEx Employee of the Month Award">
                 <h3>Employee of the Month</h3>
                 <p>FedEx Supply Chain - Jan 2024</p>
             </div>
             <div class="cert-card">
-                <img src="assets/images/UTAReferenceLetter.jpg" alt="UTA Reference Letter">
                 <h3>USACE Reference Letter</h3>
                 <p>U.S. Army Corps of Engineers - 2025</p>
-                <a href="assets/documents/UTA Reference Letter - Ravi Ray.pdf" class="cta-button" download>Download PDF</a>
+                <a href="UTA Reference Letter - Ravi Ray.pdf" download>Download PDF</a>
             </div>
         </div>
     </section>
 
+    <!-- Contact Section -->
     <section id="contact" class="section">
         <h2 class="section-title">Contact</h2>
         <div class="contact-grid">
@@ -219,22 +254,24 @@
                 <p><i class="fas fa-phone"></i> (817) 422-4938</p>
                 <p><i class="fas fa-envelope"></i> <a href="mailto:rkr9684@mavs.uta.edu">rkr9684@mavs.uta.edu</a></p>
                 <div class="social-links">
-                    <a href="https://github.com/ravi-ray96" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
-                    <a href="https://linkedin.com/in/ravi-ray" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://linkedin.com/in/ravi-ray-776aa82b8"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://github.com/ravi-ray96"><i class="fab fa-github"></i></a>
                 </div>
             </div>
-            <form action="https://formspree.io/f/[YOUR_FORM_ID]" method="POST">
-                <input type="text" name="name" placeholder="Name" required aria-label="Name">
-                <input type="email" name="email" placeholder="Email" required aria-label="Email">
-                <textarea name="message" placeholder="Message" required aria-label="Message"></textarea>
+            <form action="#" method="post">
+                <input type="text" placeholder="Your Name" required>
+                <input type="email" placeholder="Your Email" required>
+                <textarea placeholder="Your Message" required></textarea>
                 <button type="submit" class="cta-button">Send Message</button>
             </form>
         </div>
     </section>
 
+    <!-- Footer -->
     <footer class="footer">
-        <p>&copy; 2025 Ravi Ray. All rights reserved.</p>
+        <p>© 2025 Ravi Ray. All rights reserved.</p>
     </footer>
+
     <script src="script.js"></script>
 </body>
 </html>
